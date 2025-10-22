@@ -567,6 +567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4823709559271569003}
   - component: {fileID: 1724622967677737049}
+  - component: {fileID: 4823709559271569004}
   m_Layer: 0
   m_Name: Target
   m_TagString: Target
@@ -1053,19 +1054,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 8
+    VectorObservationSize: 1
     NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 0
-      BranchSizes: 04000000
-    VectorActionSize: 04000000
+      BranchSizes: 01000000
+    VectorActionSize: 01000000
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 2094a8c44ccc34e419e0ba22dbcbf0d0, type: 3}
+  m_Model: {fileID: 0}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
-  m_BehaviorName: YasuoAgentMove
+  m_BehaviorType: 0
+  m_BehaviorName: My Behavior
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1
@@ -3120,6 +3121,19 @@ Transform:
   - {fileID: 7315856066988972646}
   m_Father: {fileID: 1838311082572904176}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4823709559271569004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363352146552119810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3df6521f23758a48aa96bbd60bfefb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1.875
 --- !u!4 &4830659245343903641
 Transform:
   m_ObjectHideFlags: 0
@@ -4905,9 +4919,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2213849438505328205}
+  - component: {fileID: 7794676769431678152}
   - component: {fileID: 1102789846128204497}
   - component: {fileID: 6829096947374121209}
-  - component: {fileID: 7794676769431678152}
   - component: {fileID: 961894959044218897}
   - component: {fileID: 7794676769431678151}
   - component: {fileID: 6157574112376875079}
@@ -4961,6 +4975,7 @@ MonoBehaviour:
   m_BlackboardVariableOverridesList:
   - rid: 5436156407254351872
   - rid: 5436156407254351981
+  - rid: 5436156417933049974
   m_IsInitialised: 0
   m_IsStarted: 0
   references:
@@ -4982,6 +4997,14 @@ MonoBehaviour:
           m_Value1: 4221564119192594284
         Name: Target
         m_Value: {fileID: 4823709559271569003}
+    - rid: 5436156417933049974
+      type: {class: 'BlackboardVariable`1[[Unity.InferenceEngine.ModelAsset, Unity.InferenceEngine]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 8727370873930706603
+          m_Value1: 3857395549280046515
+        Name: MoveModel
+        m_Value: {fileID: 5022602860645237092, guid: 2094a8c44ccc34e419e0ba22dbcbf0d0, type: 3}
 --- !u!1 &7811046947605547528
 GameObject:
   m_ObjectHideFlags: 0
