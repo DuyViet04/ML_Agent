@@ -3407,33 +3407,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &5121734614832731473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7794676769431678150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90b1bfb27f4d8b04cb0b88bbfad55f51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agentParameters:
-    maxStep: 0
-  hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
-  target: {fileID: 4823709559271569003}
-  agentAnimator: {fileID: 7524343143265957697}
-  moveSpeed: 1.725
-  rotateSpeed: 180
-  ground: {fileID: 202838709286192157}
-  walls:
-  - {fileID: 5887403586638490168}
-  - {fileID: 5001915011047788582}
-  - {fileID: 8668104235436144375}
-  - {fileID: 3619120114689466791}
-  randomValue: 3
 --- !u!4 &5157270683843737860
 Transform:
   m_ObjectHideFlags: 0
@@ -4934,8 +4907,9 @@ GameObject:
   - component: {fileID: 2213849438505328205}
   - component: {fileID: 1102789846128204497}
   - component: {fileID: 6829096947374121209}
+  - component: {fileID: 7794676769431678152}
   - component: {fileID: 961894959044218897}
-  - component: {fileID: 5121734614832731473}
+  - component: {fileID: 7794676769431678151}
   - component: {fileID: 6157574112376875079}
   m_Layer: 0
   m_Name: YasuoAgent
@@ -4944,6 +4918,70 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7794676769431678151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7794676769431678150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90b1bfb27f4d8b04cb0b88bbfad55f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
+  target: {fileID: 4823709559271569003}
+  agentAnimator: {fileID: 7524343143265957697}
+  moveSpeed: 1.725
+  rotateSpeed: 180
+  ground: {fileID: 202838709286192157}
+  walls:
+  - {fileID: 5887403586638490168}
+  - {fileID: 5001915011047788582}
+  - {fileID: 8668104235436144375}
+  - {fileID: 3619120114689466791}
+  randomValue: 3
+--- !u!114 &7794676769431678152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7794676769431678150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Graph: {fileID: -3569739065058900202, guid: 655cd85f94844cb4294b202c6dc39a12, type: 2}
+  m_BlackboardVariableOverridesList:
+  - rid: 5436156407254351872
+  - rid: 5436156407254351981
+  m_IsInitialised: 0
+  m_IsStarted: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 5436156407254351872
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 7794676769431678150}
+    - rid: 5436156407254351981
+      type: {class: 'BlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 9330581710865971695
+          m_Value1: 4221564119192594284
+        Name: Target
+        m_Value: {fileID: 4823709559271569003}
 --- !u!1 &7811046947605547528
 GameObject:
   m_ObjectHideFlags: 0
