@@ -77,20 +77,6 @@ public class YasuoAgentMove : Agent
 
         // Phạt nhẹ mỗi bước để khuyến khích hoàn thành nhiệm vụ nhanh hơn
         AddReward(-1f / MaxStep);
-
-        // Thưởng dựa trên sự tiến gần hơn đến mục tiêu
-        // float currentDistance = Vector3.Distance(this.transform.localPosition, this.target.localPosition);
-        // float delta = this.lastDistanceToTarget - currentDistance;
-        // if (delta > 0)
-        // {
-        //     AddReward(delta * 1f / MaxStep * 100f);
-        // }
-        // else
-        // { 
-        //     AddReward( delta * -1f / MaxStep);
-        // }
-        //
-        // this.lastDistanceToTarget = currentDistance;
     }
 
     // Xử lý va chạm với mục tiêu
@@ -117,7 +103,7 @@ public class YasuoAgentMove : Agent
     void SpawnObjects()
     {
         // Lấy ngẫu nhiên giá trị để thay đổi cấu trúc môi trường
-        //his.randomValue = Random.Range(1f, 3f);
+        this.randomValue = Random.Range(1f, 3f);
 
         // Thay đổi kích thước mặt đất
         this.ground.transform.localScale = new Vector3(1, 1, 1) * this.randomValue;
