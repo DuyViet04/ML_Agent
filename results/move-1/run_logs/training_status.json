@@ -1,0 +1,65 @@
+{
+    "YasuoAgentMove": {
+        "checkpoints": [
+            {
+                "steps": 499993,
+                "file_path": "results\\move-1\\YasuoAgentMove\\YasuoAgentMove-499993.onnx",
+                "reward": 1.4128958323271945,
+                "creation_time": 1761116549.5177326,
+                "auxillary_file_paths": [
+                    "results\\move-1\\YasuoAgentMove\\YasuoAgentMove-499993.pt"
+                ]
+            },
+            {
+                "steps": 999956,
+                "file_path": "results\\move-1\\YasuoAgentMove\\YasuoAgentMove-999956.onnx",
+                "reward": 1.7910697713147763,
+                "creation_time": 1761117212.6201453,
+                "auxillary_file_paths": [
+                    "results\\move-1\\YasuoAgentMove\\YasuoAgentMove-999956.pt"
+                ]
+            },
+            {
+                "steps": 1499992,
+                "file_path": "results\\move-1\\YasuoAgentMove\\YasuoAgentMove-1499992.onnx",
+                "reward": 1.7936470473513884,
+                "creation_time": 1761117934.1298735,
+                "auxillary_file_paths": [
+                    "results\\move-1\\YasuoAgentMove\\YasuoAgentMove-1499992.pt"
+                ]
+            },
+            {
+                "steps": 1999969,
+                "file_path": "results\\move-1\\YasuoAgentMove\\YasuoAgentMove-1999969.onnx",
+                "reward": 1.7978402190294462,
+                "creation_time": 1761118604.1741917,
+                "auxillary_file_paths": [
+                    "results\\move-1\\YasuoAgentMove\\YasuoAgentMove-1999969.pt"
+                ]
+            },
+            {
+                "steps": 2000008,
+                "file_path": "results\\move-1\\YasuoAgentMove\\YasuoAgentMove-2000008.onnx",
+                "reward": 1.7978923209202595,
+                "creation_time": 1761118604.217074,
+                "auxillary_file_paths": [
+                    "results\\move-1\\YasuoAgentMove\\YasuoAgentMove-2000008.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2000008,
+            "file_path": "results\\move-1\\YasuoAgentMove.onnx",
+            "reward": 1.7978923209202595,
+            "creation_time": 1761118604.217074,
+            "auxillary_file_paths": [
+                "results\\move-1\\YasuoAgentMove\\YasuoAgentMove-2000008.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.2.2+cu121"
+    }
+}
