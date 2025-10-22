@@ -17,8 +17,6 @@ public class YasuoAgentMove : Agent
     [SerializeField] private List<GameObject> walls;
     [SerializeField] private float randomValue;
 
-    private float lastDistanceToTarget;
-
     // Khởi tạo agent
     public override void Initialize()
     {
@@ -29,8 +27,7 @@ public class YasuoAgentMove : Agent
     public override void OnEpisodeBegin()
     {
         Debug.Log("YasuoAgentMove OnEpisodeBegin");
-
-        this.lastDistanceToTarget = Vector3.Distance(this.transform.localPosition, this.target.localPosition);
+        
         this.SpawnObjects();
     }
 
