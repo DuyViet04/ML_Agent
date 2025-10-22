@@ -1,0 +1,65 @@
+{
+    "TargetRunAway": {
+        "checkpoints": [
+            {
+                "steps": 500105,
+                "file_path": "results\\run-away\\TargetRunAway\\TargetRunAway-500105.onnx",
+                "reward": 28.405595660209656,
+                "creation_time": 1761135026.7070053,
+                "auxillary_file_paths": [
+                    "results\\run-away\\TargetRunAway\\TargetRunAway-500105.pt"
+                ]
+            },
+            {
+                "steps": 999945,
+                "file_path": "results\\run-away\\TargetRunAway\\TargetRunAway-999945.onnx",
+                "reward": 26.48831403752168,
+                "creation_time": 1761136180.0386012,
+                "auxillary_file_paths": [
+                    "results\\run-away\\TargetRunAway\\TargetRunAway-999945.pt"
+                ]
+            },
+            {
+                "steps": 1001353,
+                "file_path": "results\\run-away\\TargetRunAway\\TargetRunAway-1001353.onnx",
+                "reward": 26.48831403752168,
+                "creation_time": 1761136180.2615929,
+                "auxillary_file_paths": [
+                    "results\\run-away\\TargetRunAway\\TargetRunAway-1001353.pt"
+                ]
+            },
+            {
+                "steps": 1499977,
+                "file_path": "results\\run-away\\TargetRunAway\\TargetRunAway-1499977.onnx",
+                "reward": 25.988726437091827,
+                "creation_time": 1761137813.1342342,
+                "auxillary_file_paths": [
+                    "results\\run-away\\TargetRunAway\\TargetRunAway-1499977.pt"
+                ]
+            },
+            {
+                "steps": 1500553,
+                "file_path": "results\\run-away\\TargetRunAway\\TargetRunAway-1500553.onnx",
+                "reward": 26.4203139146169,
+                "creation_time": 1761137813.2076218,
+                "auxillary_file_paths": [
+                    "results\\run-away\\TargetRunAway\\TargetRunAway-1500553.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1500553,
+            "file_path": "results\\run-away\\TargetRunAway.onnx",
+            "reward": 26.4203139146169,
+            "creation_time": 1761137813.2076218,
+            "auxillary_file_paths": [
+                "results\\run-away\\TargetRunAway\\TargetRunAway-1500553.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.2.2+cu121"
+    }
+}
