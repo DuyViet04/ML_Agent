@@ -1033,7 +1033,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 100000
   target: {fileID: 1539664727595778140}
   agentAnimator: {fileID: 4595756955036893558}
   moveSpeed: 1.725
@@ -1450,7 +1450,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 100000
   yasuoAgent: {fileID: 5266276921549580410}
   moveSpeed: 1.725
 --- !u!4 &1706677222024542247
@@ -3150,6 +3150,7 @@ GameObject:
   - component: {fileID: 6554401012551247398}
   - component: {fileID: 1204907368042685286}
   - component: {fileID: 205098119214358128}
+  - component: {fileID: 6554401012551247399}
   m_Layer: 0
   m_Name: YasuoAgent
   m_TagString: Player
@@ -4514,6 +4515,43 @@ MonoBehaviour:
   m_UseChildActuators: 1
   m_DeterministicInference: 0
   m_ObservableAttributeHandling: 0
+--- !u!114 &6554401012551247399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4287707880963234545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Graph: {fileID: -3569739065058900202, guid: 655cd85f94844cb4294b202c6dc39a12, type: 2}
+  m_BlackboardVariableOverridesList:
+  - rid: 5436156443708883258
+  - rid: 5436156443708883259
+  m_IsInitialised: 0
+  m_IsStarted: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 5436156443708883258
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 4287707880963234545}
+    - rid: 5436156443708883259
+      type: {class: 'BlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 9330581710865971695
+          m_Value1: 4221564119192594284
+        Name: Target
+        m_Value: {fileID: 1539664727595778140}
 --- !u!33 &6559348808613987553
 MeshFilter:
   m_ObjectHideFlags: 0
