@@ -31,6 +31,7 @@ public class YasuoAgentMove : Agent
         this.SpawnObjects();
     }
 
+    // Thu thập các quan sát từ môi trường
     public override void CollectObservations(VectorSensor sensor)
     {
         Debug.Log("YasuoAgentMove CollectObservations");
