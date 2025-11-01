@@ -28,7 +28,7 @@ public class YasuoAgentMove : Agent
     {
         Debug.Log("YasuoAgentMove OnEpisodeBegin");
         
-        this.SpawnObjects();
+        //this.SpawnObjects();
     }
 
     // Thu thập các quan sát từ môi trường
@@ -167,7 +167,7 @@ public class YasuoAgentMove : Agent
     {
         Debug.Log("YasuoAgent GoalReached");
 
-        // Thưởng khi đạt được mục tiêu
+        // Thưởng khi đạt đư0c mục tiêu
         AddReward(2f);
 
         // Kết thúc tập hiện tại
